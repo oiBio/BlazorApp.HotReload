@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RazorClassLibrary_1000\RazorClassLibrary_1000.csproj" />
+    <ProjectReference Include="..\RazorClassLibrary_2000\RazorClassLibrary_2000.csproj" />
+    <ProjectReference Include="..\RazorClassLibrary_500\RazorClassLibrary_500.csproj" />
+  </ItemGroup>
+
+</Project>
