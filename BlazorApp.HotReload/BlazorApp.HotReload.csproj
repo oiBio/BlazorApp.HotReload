@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RazorClassLibrary_1000\RazorClassLibrary_1000.csproj" />
+    <ProjectReference Include="..\ClassLibrary_1000\ClassLibrary_1000.csproj" />
+    <ProjectReference Include="..\ClassLibrary_2000\ClassLibrary_2000.csproj" />
+    <ProjectReference Include="..\ClassLibrary_500\ClassLibrary_500.csproj" />
+    <!--<ProjectReference Include="..\RazorClassLibrary_1000\RazorClassLibrary_1000.csproj" />
     <ProjectReference Include="..\RazorClassLibrary_2000\RazorClassLibrary_2000.csproj" />
-    <ProjectReference Include="..\RazorClassLibrary_500\RazorClassLibrary_500.csproj" />
+    <ProjectReference Include="..\RazorClassLibrary_500\RazorClassLibrary_500.csproj" />-->
   </ItemGroup>
 
 </Project>
