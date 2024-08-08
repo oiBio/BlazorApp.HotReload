@@ -1,21 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-	<!-- pure ClassLibraries seem to have no effect -->
-    <ProjectReference Include="..\ClassLibrary_1000\ClassLibrary_1000.csproj" />
-    <ProjectReference Include="..\ClassLibrary_2000\ClassLibrary_2000.csproj" />
-    <ProjectReference Include="..\ClassLibrary_500\ClassLibrary_500.csproj" />
-	 <!-- but RazorClassLibraries have a huge impact! -->
-	 <!-- Uncomment to see changes very fast -->
-    <ProjectReference Include="..\RazorClassLibrary_500\RazorClassLibrary_500.csproj" />
-    <ProjectReference Include="..\RazorClassLibrary_1000\RazorClassLibrary_1000.csproj" />
-    <ProjectReference Include="..\RazorClassLibrary_2000\RazorClassLibrary_2000.csproj" />
-  </ItemGroup>
+	<PropertyGroup>
+		<RestoreSources>$(RestoreSources);../RazorClassLibrary_500/bin/Debug;../RazorClassLibrary_1000/bin/Debug;../RazorClassLibrary_2000/bin/Debug;https://api.nuget.org/v3/index.json</RestoreSources>
+	</PropertyGroup>
+
+<!--	<ItemGroup>-->
+<!--		<PackageReference Include="RazorClassLibrary_500" Version="1.0.*" />-->
+<!--		<PackageReference Include="RazorClassLibrary_1000" Version="*" />-->
+<!--		<PackageReference Include="RazorClassLibrary_2000"  Version="*"/>-->
+<!--	</ItemGroup>-->
+
+	<ItemGroup>
+		<!-- pure ClassLibraries seem to have no effect -->
+		<ProjectReference Include="..\ClassLibrary_1000\ClassLibrary_1000.csproj" />
+		<ProjectReference Include="..\ClassLibrary_2000\ClassLibrary_2000.csproj" />
+		<ProjectReference Include="..\ClassLibrary_500\ClassLibrary_500.csproj" />
+		<!-- but RazorClassLibraries have a huge impact! -->
+		<!-- Uncomment to see changes very fast -->
+		<ProjectReference Include="..\RazorClassLibrary_500\RazorClassLibrary_500.csproj" />
+		<ProjectReference Include="..\RazorClassLibrary_1000\RazorClassLibrary_1000.csproj" />
+		<ProjectReference Include="..\RazorClassLibrary_2000\RazorClassLibrary_2000.csproj" />
+	</ItemGroup>
 
 </Project>

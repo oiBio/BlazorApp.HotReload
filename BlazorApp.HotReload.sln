@@ -3,24 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34205.153
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.HotReload", "BlazorApp.HotReload\BlazorApp.HotReload.csproj", "{82AAC9E6-8CFA-4065-860F-DA7066719E18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.HotReload", "BlazorApp.HotReload\BlazorApp.HotReload.csproj", "{82AAC9E6-8CFA-4065-860F-DA7066719E18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2FFE008F-CC55-4357-AEF7-12F1A6A5C8B0} = {2FFE008F-CC55-4357-AEF7-12F1A6A5C8B0}
+		{A090295A-90CC-4FED-978B-452452422BC6} = {A090295A-90CC-4FED-978B-452452422BC6}
+		{A3EDAC29-417B-4DBA-87CD-F53A503D1E65} = {A3EDAC29-417B-4DBA-87CD-F53A503D1E65}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2AE0AEFC-26D1-452F-BB55-D63DA9129C91}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibrary_500", "RazorClassLibrary_500\RazorClassLibrary_500.csproj", "{2FFE008F-CC55-4357-AEF7-12F1A6A5C8B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibrary_500", "RazorClassLibrary_500\RazorClassLibrary_500.csproj", "{2FFE008F-CC55-4357-AEF7-12F1A6A5C8B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibrary_1000", "RazorClassLibrary_1000\RazorClassLibrary_1000.csproj", "{A3EDAC29-417B-4DBA-87CD-F53A503D1E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibrary_1000", "RazorClassLibrary_1000\RazorClassLibrary_1000.csproj", "{A3EDAC29-417B-4DBA-87CD-F53A503D1E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibrary_2000", "RazorClassLibrary_2000\RazorClassLibrary_2000.csproj", "{A090295A-90CC-4FED-978B-452452422BC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibrary_2000", "RazorClassLibrary_2000\RazorClassLibrary_2000.csproj", "{A090295A-90CC-4FED-978B-452452422BC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_500", "ClassLibrary_500\ClassLibrary_500.csproj", "{AF772538-2964-4CEC-B8CE-5085503B3BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary_500", "ClassLibrary_500\ClassLibrary_500.csproj", "{AF772538-2964-4CEC-B8CE-5085503B3BDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_1000", "ClassLibrary_1000\ClassLibrary_1000.csproj", "{02DA41A5-1594-4614-B839-0EBB63284A41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary_1000", "ClassLibrary_1000\ClassLibrary_1000.csproj", "{02DA41A5-1594-4614-B839-0EBB63284A41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_2000", "ClassLibrary_2000\ClassLibrary_2000.csproj", "{902E3814-1069-444B-937F-BF225662758E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary_2000", "ClassLibrary_2000\ClassLibrary_2000.csproj", "{902E3814-1069-444B-937F-BF225662758E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

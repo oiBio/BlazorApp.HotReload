@@ -1,18 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<!--<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+		--><!-- Automatische Versionierung mit stabiler Versionsnummer --><!--
+		<MajorVersion>1</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+		<DaysSince2000>$([System.DateTime]::UtcNow.Subtract($([System.DateTime]::ParseExact("2000-01-01", "yyyy-MM-dd", null))).TotalDays.ToString("0"))</DaysSince2000>
+		<RevisionNumber>$([System.Math]::Floor($([MSBuild]::Divide($([System.DateTime]::UtcNow.TimeOfDay.TotalSeconds), 2))))</RevisionNumber>
+
+		<AssemblyVersion>$(MajorVersion).$(MinorVersion).$(DaysSince2000).$(RevisionNumber)</AssemblyVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<Version>$(MajorVersion).$(MinorVersion).$(DaysSince2000)$(RevisionNumber.PadLeft(5, '0'))</Version>
+		<InformationalVersion>$(Version)</InformationalVersion>-->
+	</PropertyGroup>
 
 
-  <ItemGroup>
-    <SupportedPlatform Include="browser" />
-  </ItemGroup>
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+	</ItemGroup>
 
 </Project>
