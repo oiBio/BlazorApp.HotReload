@@ -4,9 +4,9 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<!--<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
-		--><!-- Automatische Versionierung mit stabiler Versionsnummer --><!--
+		 <!--Automatische Versionierung mit stabiler Versionsnummer--> 
 		<MajorVersion>1</MajorVersion>
 		<MinorVersion>0</MinorVersion>
 		<DaysSince2000>$([System.DateTime]::UtcNow.Subtract($([System.DateTime]::ParseExact("2000-01-01", "yyyy-MM-dd", null))).TotalDays.ToString("0"))</DaysSince2000>
@@ -15,7 +15,7 @@
 		<AssemblyVersion>$(MajorVersion).$(MinorVersion).$(DaysSince2000).$(RevisionNumber)</AssemblyVersion>
 		<FileVersion>$(AssemblyVersion)</FileVersion>
 		<Version>$(MajorVersion).$(MinorVersion).$(DaysSince2000)$(RevisionNumber.PadLeft(5, '0'))</Version>
-		<InformationalVersion>$(Version)</InformationalVersion>-->
+		<InformationalVersion>$(Version)</InformationalVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
